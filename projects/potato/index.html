@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/fonts.css">
+  <link rel="stylesheet" href="./styles/colors.css">
+  <link rel="stylesheet" href="./styles/modal.css">
+  <link rel="stylesheet" href="./styles/common.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="./scripts/debugger.js"></script>
+  <script src="./scripts/modal.js"></script>
+  <script src="./scripts/form.js"></script>
+  <script src="./scripts/carouselCosts.js"></script>
+  <script src="./scripts/main.js"></script>
+  <title>Картошечка</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-wrapper">
+      <div class="header-container container">
+        <div class="header__topbar">
+          <div class="header__topbar-icon-container">
+            <a href="#" class="header__topbar-icon-link" title="Картошечка">
+              <svg width="61" height="67" viewBox="0 0 61 67" fill="none" xmlns="http://www.w3.org/2000/svg" class="header__topbar-icon">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.70648 17.6542C14.0584 10.0911 26.4247 -4.21684 45.6793 1.19329C54.3486 3.62918 60.5241 11.3136 60.9722 20.5421C61.4235 29.8357 56.0881 40.2514 42.7356 48.4433C40.5395 49.7906 38.2108 52.0112 35.6197 54.6049C35.2897 54.9352 34.9558 55.2712 34.6184 55.6107C32.3778 57.8653 29.9794 60.2788 27.4997 62.2644C24.6534 64.5438 21.4607 66.4632 17.9565 66.9045C14.326 67.3618 10.6873 66.1968 7.11737 62.972C-0.0648112 56.4841 -0.847159 46.8219 0.608309 38.2828C2.06982 29.7083 5.87045 21.662 8.70648 17.6542ZM44.5972 5.04373C28.1121 0.411763 17.279 12.4643 11.9718 19.9643C9.47824 23.4881 5.9115 30.9756 4.55145 38.9548C3.18537 46.9694 4.1273 54.8809 9.79884 60.0042C12.6558 62.5849 15.1696 63.2243 17.4566 62.9363C19.8697 62.6324 22.3593 61.2567 24.9993 59.1426C27.2873 57.3104 29.5086 55.0765 31.7654 52.8068C32.1059 52.4644 32.4472 52.1211 32.7897 51.7783C35.3322 49.2333 37.9804 46.6682 40.6437 45.0343C53.1138 37.3837 57.3389 28.1911 56.9769 20.736C56.6117 13.2159 51.6002 7.01142 44.5972 5.04373Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M24.9983 21.0049C24.9983 19.9003 25.8937 19.0049 26.9983 19.0049H31.9983C33.1028 19.0049 33.9983 19.9003 33.9983 21.0049C33.9983 22.1094 33.1028 23.0049 31.9983 23.0049H26.9983C25.8937 23.0049 24.9983 22.1094 24.9983 21.0049Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M32.9983 28.0041C32.9983 26.8996 33.8937 26.0041 34.9983 26.0041H37.9983C39.1028 26.0041 39.9983 26.8996 39.9983 28.0041C39.9983 29.1087 39.1028 30.0041 37.9983 30.0041H34.9983C33.8937 30.0041 32.9983 29.1087 32.9983 28.0041Z" fill="white"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.9983 46.0022C16.9983 44.8976 17.8937 44.0022 18.9983 44.0022H21.9983C23.1028 44.0022 23.9983 44.8976 23.9983 46.0022C23.9983 47.1068 23.1028 48.0022 21.9983 48.0022H18.9983C17.8937 48.0022 16.9983 47.1068 16.9983 46.0022Z" fill="white"/>
+              </svg>
+            </a>
+          </div>
+          <nav class="header__topbar-navigation">
+            <button class="header__topbar-navigation-button topbar-mobile-button" aria-label="Мобильная навигация">
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="topbar-mobile-button__icon topbar-mobile-button__icon_burger">
+                <rect y="3" width="30" height="4" fill="white"/>
+                <rect y="13" width="30" height="4" fill="white"/>
+                <rect y="23" width="30" height="4" fill="white"/>
+              </svg>
+              <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="topbar-mobile-button__icon topbar-mobile-button__icon_close">
+                <rect x="5.80762" y="2.97919" width="30" height="4" transform="rotate(45 5.80762 2.97919)" fill="#404040"/>
+                <rect width="30" height="4" transform="matrix(-0.707107 0.707107 0.707107 0.707107 24.1924 2.97919)" fill="#404040"/>
+              </svg>
+            </button>
+            <ul class="header__topbar-navigation-list header-navigation list-reset">
+              <li class="header-navigation__item">
+                <a href="#costs" class="header-navigation__item-link" title="Цены">Цены</a>
+              </li>
+              <li class="header-navigation__item">
+                <a href="#videos" class="header-navigation__item-link" title="Видео">Видео</a>
+              </li>
+              <li class="header-navigation__item">
+                <a href="#about" class="header-navigation__item-link" title="О нас">О нас</a>
+              </li>
+              <li class="header-navigation__item">
+                <button class="header__topbar-button">Оставить заявку</button>
+              </li>
+            </ul>
+            <div class="header__topbar-navigation-footer topbar-mobile-footer">
+              <a href="#" class="header__topbar-brand-link" title="Картошечка">Картошечка</a>
+              <ul class="topbar-mobile-footer__socials-list socials list-reset">
+                <li class="socials__item">
+                  <a href="#" class="socials__item-link socials__item-link_vk" title="ВКонтакте">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="socials__item-link-icon social-icon">
+                      <circle cx="20" cy="20" r="20" class="social-icon__circle"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M19.25 27.942H20.6267C20.6267 27.942 21.0421 27.8928 21.2543 27.6491C21.4494 27.4254 21.4429 27.0046 21.4429 27.0046C21.4429 27.0046 21.4162 25.0365 22.2722 24.747C23.1281 24.4576 24.1995 26.6478 25.3494 27.4902C26.2176 28.1269 26.8775 27.9869 26.8775 27.9869L29.9483 27.9412C29.9483 27.9412 31.559 27.8366 30.7938 26.4879C30.7314 26.3782 30.35 25.4909 28.5101 23.6688C26.5844 21.762 26.8427 22.0704 29.162 18.7717C30.5743 16.763 31.1395 15.5361 30.963 15.0117C30.7946 14.5115 29.7556 14.6437 29.7556 14.6437L26.2977 14.6661C26.1443 14.6474 25.989 14.6775 25.8515 14.7525C25.6661 14.8709 25.5462 15.1482 25.5462 15.1482C25.1884 16.1382 24.7621 17.0984 24.2708 18.0209C22.7322 20.8107 22.1151 20.9585 21.8632 20.7857C21.2777 20.3822 21.4243 19.164 21.4243 18.2983C21.4243 15.5949 21.809 14.4674 20.6761 14.1762C20.3003 14.0795 20.0234 14.0155 19.0621 14.0034C17.828 13.9896 16.7841 14.0034 16.193 14.3162C15.7994 14.5218 15.4957 14.9797 15.6812 15.0074C15.9095 15.0402 16.427 15.156 16.7015 15.5543C17.0562 16.0727 17.0433 17.2235 17.0433 17.2235C17.0433 17.2235 17.2473 20.4055 16.5679 20.8012C16.1023 21.0725 15.4625 20.5187 14.0899 17.9881C13.623 17.1085 13.2097 16.1977 12.8525 15.2614C12.7892 15.1023 12.6916 14.9613 12.5675 14.8501C12.4067 14.7363 12.226 14.6584 12.0363 14.6212L8.75007 14.6445C8.75007 14.6445 8.2569 14.6592 8.0755 14.8882C7.91354 15.0921 8.06255 15.5128 8.06255 15.5128C8.06255 15.5128 10.6353 21.9339 13.5482 25.1704C16.2205 28.1373 19.2524 27.9429 19.2524 27.9429L19.25 27.942Z" class="social-icon__path"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__item-link socials__item-link_facebook" title="FaceBook">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="socials__item-link-icon social-icon">
+                      <circle cx="20" cy="20" r="20" class="social-icon__circle"/>
+                      <path d="M20.7893 32V21.0485H24.3271L24.8573 16.7802H20.7893V14.0583C20.7893 12.8191 21.1155 11.9823 22.8284 11.9823H25V8.16946C24.6228 8.1165 23.328 8 21.8292 8C18.689 8 16.548 9.99117 16.548 13.6346V16.7802H13V21.0485H16.548V32H20.7893Z" class="social-icon__path"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__item-link socials__item-link_twitter" title="Twitter">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="socials__item-link-icon social-icon">
+                      <circle cx="20" cy="20" r="20" class="social-icon__circle"/>
+                      <path d="M32 14.0086C31.1498 14.3538 30.2423 14.584 29.2887 14.6886C30.2652 14.1551 31.012 13.3182 31.3566 12.3138C30.449 12.8055 29.4381 13.1612 28.3581 13.36C27.4965 12.5231 26.2787 12 24.9116 12C22.3037 12 20.2013 13.9249 20.2013 16.2892C20.2013 16.624 20.2473 16.9483 20.3277 17.2726C16.4101 17.0948 12.9406 15.3895 10.6084 12.7846C10.2063 13.4228 9.96503 14.1551 9.96503 14.9397C9.96503 16.4252 10.7922 17.7434 12.0674 18.5175C11.2977 18.4966 10.5624 18.2978 9.93057 17.984C9.93057 18.0049 9.93057 18.0154 9.93057 18.0363C9.93057 20.1182 11.5504 21.8548 13.7103 22.2418C13.3197 22.336 12.8946 22.3883 12.4695 22.3883C12.1708 22.3883 11.8721 22.3569 11.5849 22.3151C12.1823 24.0203 13.9286 25.2652 15.985 25.2966C14.3766 26.4474 12.3432 27.1378 10.1259 27.1378C9.74675 27.1378 9.36763 27.1169 9 27.0751C11.0909 28.2886 13.5609 29 16.2263 29C24.9001 29 29.6334 22.4615 29.6334 16.7914C29.6334 16.6031 29.6334 16.4252 29.6219 16.2369C30.5639 15.6302 31.3681 14.8769 32 14.0086Z" class="social-icon__path"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="socials__item-link socials__item-link_instagram" title="Instagram">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="socials__item-link-icon social-icon">
+                      <circle cx="20" cy="20" r="20" class="social-icon__circle"/>
+                      <path d="M19.9956 10.9821C22.9333 10.9821 23.2782 10.9952 24.4393 11.0476C25.5131 11.0957 26.0937 11.2747 26.4821 11.4275C26.9972 11.6283 27.3639 11.8641 27.748 12.2483C28.1321 12.6325 28.3722 12.9992 28.5687 13.5144C28.7171 13.903 28.9004 14.4836 28.9484 15.5576C29.0008 16.719 29.0139 17.0639 29.0139 20.0022C29.0139 22.9405 29.0008 23.2854 28.9484 24.4467C28.9004 25.5207 28.7214 26.1014 28.5687 26.49C28.3679 27.0052 28.1321 27.3719 27.748 27.7561C27.3639 28.1403 26.9972 28.3804 26.4821 28.5769C26.0937 28.7253 25.5131 28.9087 24.4393 28.9567C23.2782 29.0091 22.9333 29.0222 19.9956 29.0222C17.0579 29.0222 16.7131 29.0091 15.552 28.9567C14.4782 28.9087 13.8976 28.7297 13.5091 28.5769C12.994 28.3761 12.6274 28.1403 12.2433 27.7561C11.8591 27.3719 11.619 27.0052 11.4226 26.49C11.2742 26.1014 11.0909 25.5207 11.0429 24.4467C10.9905 23.2854 10.9774 22.9405 10.9774 20.0022C10.9774 17.0639 10.9905 16.719 11.0429 15.5576C11.0909 14.4836 11.2698 13.903 11.4226 13.5144C11.6234 12.9992 11.8591 12.6325 12.2433 12.2483C12.6274 11.8641 12.994 11.6239 13.5091 11.4275C13.8976 11.279 14.4782 11.0957 15.552 11.0476C16.7131 10.9909 17.0623 10.9821 19.9956 10.9821ZM19.9956 9C17.0099 9 16.6345 9.0131 15.4603 9.06549C14.2905 9.11788 13.4917 9.30562 12.7933 9.5763C12.0687 9.85573 11.4575 10.2356 10.8464 10.8468C10.2353 11.458 9.85992 12.0736 9.57619 12.794C9.30556 13.4926 9.11786 14.2915 9.06548 15.466C9.0131 16.636 9 17.0115 9 19.9978C9 22.9841 9.0131 23.3596 9.06548 24.534C9.11786 25.7041 9.30556 26.5031 9.57619 27.206C9.85556 27.9307 10.2353 28.542 10.8464 29.1532C11.4575 29.7644 12.073 30.1399 12.7933 30.4237C13.4917 30.6944 14.2905 30.8821 15.4647 30.9345C16.6389 30.9869 17.0099 31 20 31C22.9901 31 23.3611 30.9869 24.5353 30.9345C25.7052 30.8821 26.504 30.6944 27.2067 30.4237C27.9314 30.1443 28.5425 29.7644 29.1536 29.1532C29.7647 28.542 30.1401 27.9264 30.4238 27.206C30.6944 26.5074 30.8821 25.7085 30.9345 24.534C30.9869 23.3596 31 22.9885 31 19.9978C31 17.0071 30.9869 16.636 30.9345 15.4616C30.8821 14.2915 30.6944 13.4926 30.4238 12.7896C30.1444 12.0649 29.7647 11.4537 29.1536 10.8424C28.5425 10.2312 27.927 9.85573 27.2067 9.57194C26.5083 9.30125 25.7095 9.11351 24.5353 9.06112C23.3567 9.0131 22.9813 9 19.9956 9Z" class="social-icon__path"/>
+                      <path d="M19.9956 14.3527C16.879 14.3527 14.3472 16.8805 14.3472 20.0022C14.3472 23.1238 16.8746 25.6517 19.9956 25.6517C23.1167 25.6517 25.644 23.1238 25.644 20.0022C25.644 16.8805 23.1167 14.3527 19.9956 14.3527ZM19.9956 23.6652C17.9702 23.6652 16.329 22.0236 16.329 19.9978C16.329 17.972 17.9702 16.3304 19.9956 16.3304C22.021 16.3304 23.6623 17.972 23.6623 19.9978C23.6623 22.0236 22.021 23.6652 19.9956 23.6652Z" class="social-icon__path"/>
+                      <path d="M25.8667 15.4441C26.5947 15.4441 27.1849 14.8538 27.1849 14.1256C27.1849 13.3974 26.5947 12.8071 25.8667 12.8071C25.1386 12.8071 24.5484 13.3974 24.5484 14.1256C24.5484 14.8538 25.1386 15.4441 25.8667 15.4441Z" class="social-icon__path"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <h1 class="header__title">Картошечка</h1>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section id="costs" class="section section_costs">
+      <div class="section-wrapper">
+        <div class="section-container section-container_costs container">
+          <div class="section__title-container section__title-container_costs">
+            <h2 class="section__title section__title_dark">Цены</h2>
+          </div>
+          <div class="section__carousel-container carousel-costs" data-element-type="carousel" data-carousel-name="carousel-costs">
+            <ul class="carousel-costs__controll-list list-reset">
+              <li class="carousel-costs__controll-item">
+                <button class="carousel-costs__controll-button" data-carousel-controll="slide-left" aria-label="Сдвинуть влево элементы слайдера">
+                  <svg width="40" height="78" viewBox="0 0 40 78" fill="none" xmlns="http://www.w3.org/2000/svg" class="carousel-costs__controll-button-icon carousel-controll-icon">
+                    <path d="M38 2L3 39L38 76" stroke-width="4" class="carousel-controll-icon__arrow-left"/>
+                  </svg>
+                </button>
+              </li>
+              <li class="carousel-costs__controll-item">
+                <button class="carousel-costs__controll-button" data-carousel-controll="slide-right" aria-label="Сдвинуть вправо элементы слайдера">
+                  <svg width="40" height="78" viewBox="0 0 40 78" fill="none" xmlns="http://www.w3.org/2000/svg" class="carousel-costs__controll-button-icon carousel-controll-icon">
+                    <path d="M2 2L37 39L2 76" stroke-width="4" class="carousel-controll-icon__arrow-right"/>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+            <div class="carousel-costs__slides-container">
+              <ul class="carousel-costs__slides-list list-reset">
+                <li class="carousel-costs__slide">
+                  <div class="carousel-costs__slide-preview"></div>
+                  <h3 class="carousel-costs__slide-title">Столовый картофель</h3>
+                  <span class="carousel-costs__slide-cost">142&nbsp;&#8381;</span>
+                </li>
+                <li class="carousel-costs__slide">
+                  <div class="carousel-costs__slide-preview"></div>
+                  <h3 class="carousel-costs__slide-title">Деревенский картофель</h3>
+                  <span class="carousel-costs__slide-cost">129&nbsp;&#8381;</span>
+                </li>
+                <li class="carousel-costs__slide">
+                  <div class="carousel-costs__slide-preview"></div>
+                  <h3 class="carousel-costs__slide-title">Домашний картофель</h3>
+                  <span class="carousel-costs__slide-cost">133&nbsp;&#8381;</span>
+                </li>
+              </ul>
+            </div>
+            <ul class="carousel-costs__indicators-list list-reset">
+              <li class="carousel-costs__indicators-item carousel-costs__indicators-item_is-active"></li>
+              <li class="carousel-costs__indicators-item"></li>
+              <li class="carousel-costs__indicators-item"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="videos" class="section section_videos">
+      <div class="section-wrapper section-wrapper_videos">
+        <div class="section-container section-container_videos container">
+          <div class="section__title-container section__title-container_videos">
+            <h2 class="section__title section__title_light">Видео</h2>
+          </div>
+          <div class="section__video-container main-video">
+            <button class="section__video-button">
+              <svg version="1.1" width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve" class="section__video-button-icon section__video-button-icon_play">
+                <path d="M7.3,29l19.5-11.3c1.3-0.8,1.3-2.7,0-3.5L7.3,3c-1.3-0.8-3,0.2-3,1.7v22.5C4.3,28.8,5.9,29.8,7.3,29z" class="section__video-button-icon-path"/>
+              </svg>
+              <svg version="1.1" width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve" class="section__video-button-icon section__video-button-icon_stop">
+                <path d="M25.1,29.3h-3.3c-1.4,0-2.5-1.1-2.5-2.5V5.2c0-1.4,1.1-2.5,2.5-2.5h3.3c1.4,0,2.5,1.1,2.5,2.5v21.5 C27.6,28.1,26.4,29.3,25.1,29.3z" class="section__video-button-icon-path"/>
+                <path d="M10.8,29.3H7.5c-1.4,0-2.5-1.1-2.5-2.5V5.2c0-1.4,1.1-2.5,2.5-2.5h3.3c1.4,0,2.5,1.1,2.5,2.5v21.5 C13.3,28.1,12.2,29.3,10.8,29.3z" class="section__video-button-icon-path"/>
+              </svg>
+            </button>
+            <video class="section__video">
+              <source src="./videos/potatoes-fermer.mp4" type="video/mp4">
+              Ваш браузер не поддерживает HTML5-видео.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section section_about">
+      <div class="section-wrapper section-wrapper_about">
+        <div class="section__about-background-potatoes">
+          <div class="section__about-background-potato"></div>
+          <div class="section__about-background-potato"></div>
+        </div>
+        <div class="section-container section-container_about container">
+          <div class="section__title-container section__title-container_about">
+            <h2 class="section__title section__title_dark">О нас</h2>
+          </div>
+          <div class="section__about-description-container company-about">
+            <div class="company-about__description">
+              <p class="company-about__description-phar">Если картошка, запеченная в&nbsp;духовке, получается не&nbsp;всегда такой как хочется (сухая или наоборот мокрая, сыроватая внутри, недостаточно удачная по&nbsp;специям)&nbsp;&mdash; дайте шанс этому рецепту.</p>
+              <p class="company-about__description-phar">Такая картошечка по-деревенски стабильно получается очень вкусная, хрустящая снаружи и&nbsp;мягкая, как пюрешка внутри, ароматная&nbsp;&mdash; в&nbsp;общем пальчики оближешь. Рецепт у&nbsp;меня простой, но&nbsp;с&nbsp;технологическим секретом, который и&nbsp;решает дело.</p>
+            </div>
+          </div>
+          <div class="section__about-form-container">
+            <h3 class="section__about-form-title">Оставить заявку</h3>
+            <form class="section__about-form form-callback" action="./core/handler.php" method="POST" data-callback-form>
+              <div class="form-callback__input-container">
+                <input id="form-callback_name" type="text" name="client_name" class="form-callback__input form-callback__input_text" placeholder="Имя" pattern="[А-Яа-яЁёa-zA-Z]+" required>
+                <label for="form-callback_name" class="form-callback__input-label">Имя</label>
+              </div>
+              <div class="form-callback__input-container">
+                <input id="form-callback_tel" type="tel" name="client_phone" class="form-callback__input form-callback__input_tel" placeholder="Номер телефона" pattern="\+7\d{10}" required>
+                <label for="form-callback_tel" class="form-callback__input-label">Номер телефона</label>
+              </div>
+              <input type="submit" class="form-callback__input form-callback__input_submit" value="Оставить заявку">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-wrapper">
+      <div class="footer-container container">
+        <a href="#" class="footer__text-brand" title="Картошечка">Картошечка</a>
+        <ul class="footer__socials-list socials list-reset">
+          <li class="socials__item">
+            <a href="#" class="socials__item-link socials__item-link_vk" title="ВКонтакте">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="socials__item-link-icon social-icon">
+                <circle cx="20" cy="20" r="20" class="social-icon__circle"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.25 27.942H20.6267C20.6267 27.942 21.0421 27.8928 21.2543 27.6491C21.4494 27.4254 21.4429 27.0046 21.4429 27.0046C21.4429 27.0046 21.4162 25.0365 22.2722 24.747C23.1281 24.4576 24.1995 26.6478 25.3494 27.4902C26.2176 28.1269 26.8775 27.9869 26.8775 27.9869L29.9483 27.9412C29.9483 27.9412 31.559 27.8366 30.7938 26.4879C30.7314 26.3782 30.35 25.4909 28.5101 23.6688C26.5844 21.762 26.8427 22.0704 29.162 18.7717C30.5743 16.763 31.1395 15.5361 30.963 15.0117C30.7946 14.5115 29.7556 14.6437 29.7556 14.6437L26.2977 14.6661C26.1443 14.6474 25.989 14.6775 25.8515 14.7525C25.6661 14.8709 25.5462 15.1482 25.5462 15.1482C25.1884 16.1382 24.7621 17.0984 24.2708 18.0209C22.7322 20.8107 22.1151 20.9585 21.8632 20.7857C21.2777 20.3822 21.4243 19.164 21.4243 18.2983C21.4243 15.5949 21.809 14.4674 20.6761 14.1762C20.3003 14.0795 20.0234 14.0155 19.0621 14.0034C17.828 13.9896 16.7841 14.0034 16.193 14.3162C15.7994 14.5218 15.4957 14.9797 15.6812 15.0074C15.9095 15.0402 16.427 15.156 16.7015 15.5543C17.0562 16.0727 17.0433 17.2235 17.0433 17.2235C17.0433 17.2235 17.2473 20.4055 16.5679 20.8012C16.1023 21.0725 15.4625 20.5187 14.0899 17.9881C13.623 17.1085 13.2097 16.1977 12.8525 15.2614C12.7892 15.1023 12.6916 14.9613 12.5675 14.8501C12.4067 14.7363 12.226 14.6584 12.0363 14.6212L8.75007 14.6445C8.75007 14.6445 8.2569 14.6592 8.0755 14.8882C7.91354 15.0921 8.06255 15.5128 8.06255 15.5128C8.06255 15.5128 10.6353 21.9339 13.5482 25.1704C16.2205 28.1373 19.2524 27.9429 19.2524 27.9429L19.25 27.942Z" class="social-icon__path"/>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__item-link socials__item-link_facebook" title="FaceBook">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="socials__item-link-icon social-icon">
+                <circle cx="20" cy="20" r="20" class="social-icon__circle"/>
+                <path d="M20.7893 32V21.0485H24.3271L24.8573 16.7802H20.7893V14.0583C20.7893 12.8191 21.1155 11.9823 22.8284 11.9823H25V8.16946C24.6228 8.1165 23.328 8 21.8292 8C18.689 8 16.548 9.99117 16.548 13.6346V16.7802H13V21.0485H16.548V32H20.7893Z" class="social-icon__path"/>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__item-link socials__item-link_twitter" title="Twitter">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="socials__item-link-icon social-icon">
+                <circle cx="20" cy="20" r="20" class="social-icon__circle"/>
+                <path d="M32 14.0086C31.1498 14.3538 30.2423 14.584 29.2887 14.6886C30.2652 14.1551 31.012 13.3182 31.3566 12.3138C30.449 12.8055 29.4381 13.1612 28.3581 13.36C27.4965 12.5231 26.2787 12 24.9116 12C22.3037 12 20.2013 13.9249 20.2013 16.2892C20.2013 16.624 20.2473 16.9483 20.3277 17.2726C16.4101 17.0948 12.9406 15.3895 10.6084 12.7846C10.2063 13.4228 9.96503 14.1551 9.96503 14.9397C9.96503 16.4252 10.7922 17.7434 12.0674 18.5175C11.2977 18.4966 10.5624 18.2978 9.93057 17.984C9.93057 18.0049 9.93057 18.0154 9.93057 18.0363C9.93057 20.1182 11.5504 21.8548 13.7103 22.2418C13.3197 22.336 12.8946 22.3883 12.4695 22.3883C12.1708 22.3883 11.8721 22.3569 11.5849 22.3151C12.1823 24.0203 13.9286 25.2652 15.985 25.2966C14.3766 26.4474 12.3432 27.1378 10.1259 27.1378C9.74675 27.1378 9.36763 27.1169 9 27.0751C11.0909 28.2886 13.5609 29 16.2263 29C24.9001 29 29.6334 22.4615 29.6334 16.7914C29.6334 16.6031 29.6334 16.4252 29.6219 16.2369C30.5639 15.6302 31.3681 14.8769 32 14.0086Z" class="social-icon__path"/>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__item-link socials__item-link_instagram" title="Instagram">
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="socials__item-link-icon social-icon">
+                <circle cx="20" cy="20" r="20" class="social-icon__circle"/>
+                <path d="M19.9956 10.9821C22.9333 10.9821 23.2782 10.9952 24.4393 11.0476C25.5131 11.0957 26.0937 11.2747 26.4821 11.4275C26.9972 11.6283 27.3639 11.8641 27.748 12.2483C28.1321 12.6325 28.3722 12.9992 28.5687 13.5144C28.7171 13.903 28.9004 14.4836 28.9484 15.5576C29.0008 16.719 29.0139 17.0639 29.0139 20.0022C29.0139 22.9405 29.0008 23.2854 28.9484 24.4467C28.9004 25.5207 28.7214 26.1014 28.5687 26.49C28.3679 27.0052 28.1321 27.3719 27.748 27.7561C27.3639 28.1403 26.9972 28.3804 26.4821 28.5769C26.0937 28.7253 25.5131 28.9087 24.4393 28.9567C23.2782 29.0091 22.9333 29.0222 19.9956 29.0222C17.0579 29.0222 16.7131 29.0091 15.552 28.9567C14.4782 28.9087 13.8976 28.7297 13.5091 28.5769C12.994 28.3761 12.6274 28.1403 12.2433 27.7561C11.8591 27.3719 11.619 27.0052 11.4226 26.49C11.2742 26.1014 11.0909 25.5207 11.0429 24.4467C10.9905 23.2854 10.9774 22.9405 10.9774 20.0022C10.9774 17.0639 10.9905 16.719 11.0429 15.5576C11.0909 14.4836 11.2698 13.903 11.4226 13.5144C11.6234 12.9992 11.8591 12.6325 12.2433 12.2483C12.6274 11.8641 12.994 11.6239 13.5091 11.4275C13.8976 11.279 14.4782 11.0957 15.552 11.0476C16.7131 10.9909 17.0623 10.9821 19.9956 10.9821ZM19.9956 9C17.0099 9 16.6345 9.0131 15.4603 9.06549C14.2905 9.11788 13.4917 9.30562 12.7933 9.5763C12.0687 9.85573 11.4575 10.2356 10.8464 10.8468C10.2353 11.458 9.85992 12.0736 9.57619 12.794C9.30556 13.4926 9.11786 14.2915 9.06548 15.466C9.0131 16.636 9 17.0115 9 19.9978C9 22.9841 9.0131 23.3596 9.06548 24.534C9.11786 25.7041 9.30556 26.5031 9.57619 27.206C9.85556 27.9307 10.2353 28.542 10.8464 29.1532C11.4575 29.7644 12.073 30.1399 12.7933 30.4237C13.4917 30.6944 14.2905 30.8821 15.4647 30.9345C16.6389 30.9869 17.0099 31 20 31C22.9901 31 23.3611 30.9869 24.5353 30.9345C25.7052 30.8821 26.504 30.6944 27.2067 30.4237C27.9314 30.1443 28.5425 29.7644 29.1536 29.1532C29.7647 28.542 30.1401 27.9264 30.4238 27.206C30.6944 26.5074 30.8821 25.7085 30.9345 24.534C30.9869 23.3596 31 22.9885 31 19.9978C31 17.0071 30.9869 16.636 30.9345 15.4616C30.8821 14.2915 30.6944 13.4926 30.4238 12.7896C30.1444 12.0649 29.7647 11.4537 29.1536 10.8424C28.5425 10.2312 27.927 9.85573 27.2067 9.57194C26.5083 9.30125 25.7095 9.11351 24.5353 9.06112C23.3567 9.0131 22.9813 9 19.9956 9Z" class="social-icon__path"/>
+                <path d="M19.9956 14.3527C16.879 14.3527 14.3472 16.8805 14.3472 20.0022C14.3472 23.1238 16.8746 25.6517 19.9956 25.6517C23.1167 25.6517 25.644 23.1238 25.644 20.0022C25.644 16.8805 23.1167 14.3527 19.9956 14.3527ZM19.9956 23.6652C17.9702 23.6652 16.329 22.0236 16.329 19.9978C16.329 17.972 17.9702 16.3304 19.9956 16.3304C22.021 16.3304 23.6623 17.972 23.6623 19.9978C23.6623 22.0236 22.021 23.6652 19.9956 23.6652Z" class="social-icon__path"/>
+                <path d="M25.8667 15.4441C26.5947 15.4441 27.1849 14.8538 27.1849 14.1256C27.1849 13.3974 26.5947 12.8071 25.8667 12.8071C25.1386 12.8071 24.5484 13.3974 24.5484 14.1256C24.5484 14.8538 25.1386 15.4441 25.8667 15.4441Z" class="social-icon__path"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

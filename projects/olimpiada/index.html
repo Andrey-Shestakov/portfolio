@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Андрей Шестаков">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/fonts.css">
+  <link rel="stylesheet" href="./styles/colors.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="./scripts/debugger.js"></script>
+  <script src="./scripts/modal.js"></script>
+  <script src="./scripts/form.js"></script>
+  <script src="./scripts/main.js"></script>
+  <title>Олимпиада</title>
+</head>
+<body>
+  <section id="main-section" class="section">
+    <div class="section-wrapper">
+      <div class="container container_application">
+        <h1 class="section__title">Олимпиада</h1>
+        <form class="section__form application-form" action="./core/handler.php" method="POST" data-application-form>
+          <p class="application-form__input-description">Поле должно включать в&nbsp;себя символы кириллицы (а-яА-ЯёЁ), либо латинские символы (a-zA-Z). Форма позволяет добавить сразу несколько участников&nbsp;&mdash; для этого необходимо их&nbsp;перечислить через запятую.</p>
+          <input name="members" type="text" class="application-form__input application-form__input_text" placeholder="введите имена участников через запятую" pattern="[А-Яа-яЁёa-zA-Z,]{1,}" required>
+          <input type="submit" class="application-form__input application-form__input_submit" value="Добавить">
+        </form>
+        <div class="section__form-result application-table-container"></div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

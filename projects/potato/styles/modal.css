@@ -1,0 +1,60 @@
+.modal-wrapper {
+  position: fixed;
+  display: flex;
+  background-color: var(--modal-wrapper-background-color);
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--modal-block-background-color);
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 400px;
+  max-height: 1000px;
+}
+.modal__description {
+  font-size: 16px;
+  color: var(--modal-text-font-color);
+  margin-top: 0;
+  margin-bottom: 32px;
+  width: 100%;
+}
+.modal__button-close {
+  background-color: var(--form-input-submit-background-color);
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--form-input-submit-font-color);
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: var(--form-input-submit-border-color);
+  padding: 8px 12px;
+  outline: 0;
+  transition: background-color .2s, color .2s, border-color .2s;
+  cursor: pointer;
+}
+.modal__button-close:hover {
+  background-color: var(--modal-button-background-color--hover);
+  color: var(--modal-button-font-color--hover);
+  border-color: var(--modal-button-border-color--hover);
+}
+.modal__button-close:focus {
+  background-color: var(--modal-button-background-color--focus);
+  color: var(--modal-button-font-color--focus);
+  border-color: var(--modal-button-border-color--focus);
+}
+.modal__button-close:active {
+  background-color: var(--modal-button-background-color--active);
+  color: var(--modal-button-font-color--active);
+  border-color: var(--modal-button-border-color--active);
+}

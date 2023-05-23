@@ -1,0 +1,89 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 94px;
+}
+@media (max-width: 1170px) {
+  .footer {
+    padding-top: 41px;
+    padding-bottom: 80px;
+  }
+}
+.footer__text-brand {
+  display: inline-block;
+  font-weight: 900;
+  font-size: 42px;
+  color: var(--footer-brand-text-font-color);
+  line-height: 51px;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  outline: 0;
+  transition: color .2s;
+}
+@media (max-width: 1170px) {
+  .footer__text-brand {
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+.footer__text-brand:hover {
+  color: var(--footer-brand-text-font-color--hover);
+}
+.footer__text-brand:focus {
+  color: var(--footer-brand-text-font-color--focus);
+}
+.footer__text-brand:active {
+  color: var(--footer-brand-text-font-color--active);
+}
+.footer__socials-list {
+  display: flex;
+  justify-content: center;
+}
+.socials__item {
+  margin-right: 10px;
+}
+.socials__item:last-child {
+  margin-right: 0;
+}
+.socials__item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 0;
+  transition: filter .2s;
+}
+.socials__item-link:active {
+  filter: brightness(80%);
+}
+.social-icon__circle {
+  fill: #E5E5E5;
+  transition: fill .2s;
+}
+.socials__item-link_vk:hover .social-icon__circle,
+.socials__item-link_vk:focus .social-icon__circle {
+  fill: #5783C6;
+}
+.socials__item-link_facebook:hover .social-icon__circle,
+.socials__item-link_facebook:focus .social-icon__circle {
+  fill: #3A83F1;
+}
+.socials__item-link_twitter:hover .social-icon__circle,
+.socials__item-link_twitter:focus .social-icon__circle {
+  fill: #52D3FC;
+}
+.socials__item-link_instagram:hover .social-icon__circle,
+.socials__item-link_instagram:focus .social-icon__circle {
+  fill: #FF4F79;
+}
+.social-icon__path {
+  fill: #BFBFBF;
+  transition: fill .2s;
+}
+.socials__item-link:hover .social-icon__path,
+.socials__item-link:focus .social-icon__path,
+.socials__item-link:active .social-icon__path {
+  fill: #FFFFFF;
+}

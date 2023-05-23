@@ -1,0 +1,236 @@
+html {
+  background-color: var(--main-background-color-1);
+  font-family: 'Roboto';
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+.section {
+  height: 100%;
+}
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.section__title {
+  font-size: 48px;
+  color: var(--main-font-color);
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+@media (max-width: 599px) {
+  .section__title {
+    font-size: 32px;
+  }
+}
+.container {
+  box-sizing: border-box;
+  background-color: var(--main-background-color-2);
+  border-radius: 32px;
+  padding: 48px;
+  margin: 120px auto;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  max-height: calc(100% - (120px * 2));
+}
+@media (max-width: 599px) {
+  .container {
+    border-radius: 0;
+    margin: 0;
+    max-width: unset;
+    max-height: unset;
+  }
+}
+.container_application {
+  display: flex;
+  flex-direction: column;
+}
+.application-table-container {
+  flex-grow: 1;
+  overflow-y: scroll;
+}
+.application-table-container__table {
+  font-size: 16px;
+  width: 100%;
+}
+.section__form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.application-form__input-description {
+  font-size: 14px;
+  color: var(--form-input-description-font-color);
+  margin-top: 0;
+  margin-bottom: 16px;
+  width: 100%;
+}
+.application-form__input {
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 8px;
+  padding: 8px 12px;
+}
+.application-form__input_text {
+  flex-grow: 1;
+  color: var(--form-input-text-font-color);
+  border: 1px solid var(--form-input-text-border-color);
+  outline-style: solid;
+  outline-width: 4px;
+  outline-color: var(--form-input-text-outline-color);
+  margin-right: 12px;
+  transition: background-color .2s, color .2s, border-color .2s, outline-color .2s;
+}
+@media (max-width: 599px) {
+  .application-form__input_text {
+    margin-right: 0;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+}
+.application-form__input_text:hover {
+  background-color: var(--form-input-text-background-color--hover);
+  color: var(--form-input-text-font-color--hover);
+  border-color: var(--form-input-text-border-color--hover);
+  outline-color: var(--form-input-text-outline-color--hover);
+}
+.application-form__input_text:focus {
+  background-color: var(--form-input-text-background-color--focus);
+  color: var(--form-input-text-font-color--focus);
+  border-color: var(--form-input-text-border-color--focus);
+  outline-color: var(--form-input-text-outline-color--focus);
+}
+.application-form__input_text:active {
+  background-color: var(--form-input-text-background-color--active);
+  color: var(--form-input-text-font-color--active);
+  border-color: var(--form-input-text-border-color--active);
+  outline-color: var(--form-input-text-outline-color--active);
+}
+.application-form__input_submit {
+  background-color: var(--form-input-submit-background-color);
+  font-weight: 700;
+  color: var(--form-input-submit-font-color);
+  border-style: solid;
+  border-width: 4px;
+  border-color: var(--form-input-submit-border-color);
+  outline: 0;
+  transition: background-color .2s, color .2s, border-color .2s;
+  cursor: pointer;
+}
+.application-form__input_submit:hover {
+  background-color: var(--form-input-submit-background-color--hover);
+  color: var(--form-input-submit-font-color--hover);
+  border-color: var(--form-input-submit-border-color--hover);
+}
+.application-form__input_submit:focus {
+  background-color: var(--form-input-submit-background-color--focus);
+  color: var(--form-input-submit-font-color--focus);
+  border-color: var(--form-input-submit-border-color--focus);
+}
+.application-form__input_submit:active {
+  background-color: var(--form-input-submit-background-color--active);
+  color: var(--form-input-submit-font-color--active);
+  border-color: var(--form-input-submit-border-color--active);
+}
+@media (max-width: 599px) {
+  .application-form__input_submit {
+    width: 100%;
+  }
+}
+.application-form__input_not-valid {
+  outline-style: solid;
+  outline-width: 4px;
+}
+.application-form__input_not-valid,
+.application-form__input_not-valid:hover,
+.application-form__input_not-valid:focus,
+.application-form__input_not-valid:active {
+  outline-color: var(--form-input-not-valid-outline-color);
+}
+.application-table__cell_header {
+  background-color: var(--table-header-background-color);
+  text-align: left;
+  color: var(--table-header-color);
+}
+.application-table-container__table,
+.application-table__row,
+.application-table__cell {
+  border: 1px solid var(--table-border-color);
+}
+.application-table__row_header {
+  position: sticky;
+  left: 0;
+  top: 0;
+}
+.application-table__cell {
+  padding: 8px 12px;
+}
+.application-table__cell_header {
+  border-color: var(--table-header-border-color);
+}
+.modal-wrapper {
+  position: fixed;
+  display: flex;
+  background-color: var(--modal-wrapper-background-color);
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--modal-block-background-color);
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 400px;
+  max-height: 1000px;
+}
+.modal__description {
+  font-size: 16px;
+  color: var(--modal-text-font-color);
+  margin-top: 0;
+  margin-bottom: 32px;
+  width: 100%;
+}
+.modal__button-close {
+  background-color: var(--form-input-submit-background-color);
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--form-input-submit-font-color);
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: var(--form-input-submit-border-color);
+  padding: 8px 12px;
+  outline: 0;
+  transition: background-color .2s, color .2s, border-color .2s;
+  cursor: pointer;
+}
+.modal__button-close:hover {
+  background-color: var(--modal-button-background-color--hover);
+  color: var(--modal-button-font-color--hover);
+  border-color: var(--modal-button-border-color--hover);
+}
+.modal__button-close:focus {
+  background-color: var(--modal-button-background-color--focus);
+  color: var(--modal-button-font-color--focus);
+  border-color: var(--modal-button-border-color--focus);
+}
+.modal__button-close:active {
+  background-color: var(--modal-button-background-color--active);
+  color: var(--modal-button-font-color--active);
+  border-color: var(--modal-button-border-color--active);
+}

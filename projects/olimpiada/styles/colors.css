@@ -1,0 +1,61 @@
+:root {
+  /* Цвета для главных модальных элементов */
+  --modal-wrapper-background-color: rgba(0, 0, 0, 0.4);
+  --modal-block-background-color: #FFFFFF;
+  --modal-text-font-color: #232323;
+  /* Цвета для кнопки модального окна */
+  --modal-button-background-color: #232323;
+  --modal-button-background-color--hover: #3E3E3E;
+  --modal-button-background-color--focus: #EAEAEA;
+  --modal-button-background-color--active: #3E3E3E;
+  --modal-button-font-color: #EAEAEA;
+  --modal-button-font-color--hover: #EAEAEA;
+  --modal-button-font-color--focus: #3E3E3E;
+  --modal-button-font-color--active: #EAEAEA;
+  --modal-button-border-color: #232323;
+  --modal-button-border-color--hover: #3E3E3E;
+  --modal-button-border-color--focus: #3E3E3E;
+  --modal-button-border-color--active: #3E3E3E;
+  /* Основные цвета */
+  --main-background-color-1: #EAEAEA;
+  --main-background-color-2: #FFFFFF;
+  --main-font-color: #232323;
+  /* Цвета для главной таблицы приложения */
+  --table-border-color: #EAEAEA;
+  --table-header-border-color: #000000;
+  --table-header-background-color: #232323;
+  --table-header-color: #EAEAEA;
+  /* Цвет для описания поля главной формы */
+  --form-input-description-font-color: #232323;
+  /* Цвета для кнопки главной формы типа SUBMIT */
+  --form-input-submit-background-color: #232323;
+  --form-input-submit-background-color--hover: #3E3E3E;
+  --form-input-submit-background-color--focus: #EAEAEA;
+  --form-input-submit-background-color--active: #3E3E3E;
+  --form-input-submit-font-color: #EAEAEA;
+  --form-input-submit-font-color--hover: #EAEAEA;
+  --form-input-submit-font-color--focus: #3E3E3E;
+  --form-input-submit-font-color--active: #EAEAEA;
+  --form-input-submit-border-color: #232323;
+  --form-input-submit-border-color--hover: #3E3E3E;
+  --form-input-submit-border-color--focus: #3E3E3E;
+  --form-input-submit-border-color--active: #3E3E3E;
+  /* Цвета для поля главной формы типа TEXT */
+  --form-input-text-background-color: #FFFFFF;
+  --form-input-text-background-color--hover: #EAEAEA;
+  --form-input-text-background-color--focus: #EAEAEA;
+  --form-input-text-background-color--active: #EAEAEA;
+  --form-input-text-font-color: #232323;
+  --form-input-text-font-color--hover: #000000;
+  --form-input-text-font-color--focus: #000000;
+  --form-input-text-font-color--active: #000000;
+  --form-input-text-border-color: #EAEAEA;
+  --form-input-text-border-color--hover: #EAEAEA;
+  --form-input-text-border-color--focus: #EAEAEA;
+  --form-input-text-border-color--active: #EAEAEA;
+  --form-input-text-outline-color: #FFFFFF;
+  --form-input-text-outline-color--hover: #EAEAEA;
+  --form-input-text-outline-color--focus: #232323;
+  --form-input-text-outline-color--active: #232323;
+  --form-input-not-valid-outline-color: #FF0000;
+}
