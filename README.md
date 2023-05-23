@@ -11,7 +11,7 @@
 ## Garbalo
 Это проекты, которые разрабатываются, либо уже были разработаны в рамках моего проекта "Garbalo".
 
-- Основной сайт Garbalo (в доработке): https://www.garbalo.com/
+- **Основной сайт Garbalo (в доработке)**: https://www.garbalo.com/
 - **HTML-5 Игра "PROJECT A-427":** https://www.garbalo.com/games/project-a-427
 - **CMS "GIRVAS"** (на нем базируется сайт www.garbalo.com): в разработке
 - **Игра-платформер "O.Y.N.H."**: https://www.youtube.com/watch?v=L3vhESsFgIo&t=2s
